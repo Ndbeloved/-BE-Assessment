@@ -1,0 +1,44 @@
+###
+GET http://localhost:3000/api/causes
+Content-Type: application/json
+
+
+###
+POST http://localhost:3000/api/causes
+Content-Type: application/json
+
+{
+    "title": "Fire outbreak",
+    "description": "A fire outbreak that happened in al nasir",
+    "image_url": "http://localhost:3000/cause.img"
+}
+
+
+###
+GET http://localhost:3000/api/causes/6782b678cba99d484cd26524
+Content-Type: application/json
+
+
+###
+PUT http://localhost:3000/api/causes/6782b678cba99d484cd26524
+Content-Type: application/json
+
+{
+    "title": "Edited title"
+}
+
+
+###
+DELETE http://localhost:3000/api/causes/6782b678cba99d484cd26524
+Content-Type: application/json
+
+
+###
+POST http://localhost:3000/api/causes/6782b678cba99d484cd26524/contribute
+Content-Type: application/json
+
+{
+    "name": "Erastus Beloved",
+    "email": "belovederastus@gmail.com",
+    "amount": 10000
+}
